@@ -11,7 +11,7 @@ public class HomeController {
 
 	@RequestMapping("/")
 	public String home() {
-		log.debug("logback setting success2");
+		log.debug("logback setting success2-----------------------------");
 		return "home"; // home.jsp
 	}
 }

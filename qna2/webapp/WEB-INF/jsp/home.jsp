@@ -11,22 +11,24 @@
 <body>
 	<%@ include file="./commons/_top.jspf"  %>
 	
-	<header class="jumbotron subhead" id="overview" >
+	<header>
+	<div class="jumbotron subhead" id="overview" >
 		<div class="container">
 			<h1>SLIPP</h1>
 			<p class="lead"> Substaninable Life, Programming, Programmer </p>
 		</div>
+	</div>
 	</header>
 	
 	<div class="container">
 		<div class="container-fluid">
 			<div class="row-fluid">
 				<div class="span6">
-					<h1>메인 페이지</h1>
+					<h1>메인 페이지FFF</h1>
 				</div>
 			</div>
 		</div>
 	</div>
-	
+	<div><a href="http://all-record.tistory.com/165" target="_blank'">http://all-record.tistory.com/165</a></div>
 </body>
 </html>

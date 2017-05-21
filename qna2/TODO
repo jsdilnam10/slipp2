@@ -1,3 +1,5 @@
+https://github.com/parkjaesung/slipp-201401-jwp 
+
 02. To do list
 
 * git 저장소 생성
@@ -61,6 +63,13 @@
 09. To do list
 * 테이블 스키마 초기화
 * UserDao 구현
+그리고 UserDao가 제대로 작동하는지 create( )를 통해서 알아보았다
+${is1:importStatic('org.hamcrest.CoreMatchers.*')}${is2:import('org.junit.Assert.*')}
+
+10. To do list
+* web.xml에 applicationContext.xml 로딩하도록 설정
+* UserController와 UserDao 의존관계 설정
+
 
 
 

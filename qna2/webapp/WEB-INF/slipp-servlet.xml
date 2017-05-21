@@ -9,7 +9,10 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 		
 	<!-- 컨트롤러에 해당하는 클래스를 로더하기 위해 특정 디렉터리(net.slipp.web)에 있는 컨트롤러만 스캔하겠다 -->
-	<context:component-scan base-package="net.slipp.web" />
+	<!-- <context:component-scan base-package="net.slipp.web" /> -->
+	<context:component-scan base-package="net.slipp.web">
+		<!-- <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/> -->
+	</context:component-scan>
 	<!-- 컨트롤러를 어노테이션 기반으로 지정할 수 있다. url과 controll 간의 매핑을 annotation 기반으로 하겠다 -->
 	<mvc:annotation-driven />
 	
@@ -18,10 +21,11 @@
 	<mvc:resources location="/javascripts/" mapping="/javascripts/**" />
 	
 	<!-- 뷰에 대한 설정 - 어떤식으로 할거냐? -->
-	<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver" 
-		p:prefix="/WEB-INF/jsp/"
+	<bean id="viewResolver" 
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver"
+		p:prefix="/WEB-INF/jsp/" 
 		p:suffix=".jsp" />
-		
+				
 	<!-- <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver" > 
 		<property name="prefix" value="/WEB-INF/view/" />
 		<property name="suffix" value=".jsp" />
